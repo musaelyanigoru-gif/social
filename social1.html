@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>iPrime — подписывайтесь на нас</title>
+    <style>
+        /* Обнуление и базовые стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #1d1d1f;
+            color: #f5f5f7;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 520px;
+            width: 100%;
+            background-color: #2c2c2e;
+            border-radius: 32px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+            padding: 52px 36px 44px;
+            text-align: center;
+        }
+
+        /* Логотип — ещё крупнее */
+        .logo {
+            margin-bottom: 36px;
+        }
+        .logo img {
+            max-width: 280px;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Заголовок */
+        .description {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #aeaeb2;
+            margin-bottom: 36px;
+            font-weight: 400;
+        }
+        .description strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        /* Список соцсетей */
+        .social-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 0;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px 20px;
+            background-color: #3a3a3c;
+            border-radius: 16px;
+            text-decoration: none;
+            color: #f5f5f7;
+            font-size: 17px;
+            font-weight: 500;
+            transition: background-color 0.2s, transform 0.15s;
+            border: 1px solid transparent;
+        }
+        .social-link:hover {
+            background-color: #4a4a4c;
+            transform: scale(1.01);
+        }
+        .social-link:active {
+            transform: scale(0.97);
+        }
+
+        /* Иконки соцсетей — теперь картинки */
+        .social-link .icon {
+            width: 36px;
+            height: 36px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .social-link .icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .social-link .label {
+            flex: 1;
+            text-align: left;
+        }
+
+        /* Стрелка справа */
+        .social-link .arrow {
+            color: #8e8e93;
+            font-weight: 400;
+            font-size: 18px;
+        }
+
+        /* Специфические цвета при наведении */
+        .social-link.vk:hover {
+            background-color: #3a4660;
+            border-color: #4a76a8;
+        }
+        .social-link.telegram:hover {
+            background-color: #2d4a5e;
+            border-color: #26a5e4;
+        }
+        .social-link.max:hover {
+            background-color: #4a2d5e;
+            border-color: #9b59b6;
+        }
+        .social-link.site:hover {
+            background-color: #2d4a3a;
+            border-color: #2ecc71;
+        }
+
+        /* Адаптив */
+        @media (max-width: 450px) {
+            .container {
+                padding: 32px 20px 28px;
+            }
+            .logo img {
+                max-width: 200px;
+            }
+            .social-link {
+                padding: 14px 16px;
+                font-size: 15px;
+            }
+            .social-link .icon {
+                width: 30px;
+                height: 30px;
+            }
+            .description {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Логотип iPrime — крупнее -->
+    <div class="logo">
+        <img 
+            src="https://github.com/musaelyanigoru-gif/data_transfer/blob/main/iprime.png?raw=true" 
+            alt="iPrime">
+    </div>
+
+    <!-- Текст-приглашение -->
+    <p class="description">
+        <strong>Подписывайтесь на наши социальные сети</strong><br>
+        Получайте актуальную информацию об акциях и скидках:
+    </p>
+
+    <!-- Ссылки на соцсети с иконками -->
+    <div class="social-list">
+        <!-- VK -->
+        <a href="https://vk.ru/iprimetmb" target="_blank" class="social-link vk">
+            <span class="icon">
+                <img src="vk.png" alt="VK">
+            </span>
+            <span class="label">Мы ВКонтакте</span>
+            <span class="arrow">→</span>
+        </a>
+
+        <!-- Telegram -->
+        <a href="https://t.me/iprimeru" target="_blank" class="social-link telegram">
+            <span class="icon">
+                <img src="tg.png" alt="Telegram">
+            </span>
+            <span class="label">Мы в Telegram</span>
+            <span class="arrow">→</span>
+        </a>
+
+        <!-- Max -->
+        <a href="https://max.ru/id682905742546_biz" target="_blank" class="social-link max">
+            <span class="icon">
+                <img src="max.png" alt="Max">
+            </span>
+            <span class="label">Мы в Max</span>
+            <span class="arrow">→</span>
+        </a>
+
+        <!-- Сайт -->
+        <a href="https://iprime.ru/" target="_blank" class="social-link site">
+            <span class="icon">
+                <img src="site.ico" alt="Сайт">
+            </span>
+            <span class="label">Наш сайт</span>
+            <span class="arrow">→</span>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
